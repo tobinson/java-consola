@@ -15,7 +15,7 @@ public class Ifoperadoreso {
         mes=leer.nextInt();
         System.out.println("ingrese numero de año:");
         año=leer.nextInt();
-        //proceso
+        //proceso si es igual o
         if (mes==1 || mes==2 || mes==3) {
             System.out.println("corresponde al primer trimestre");     
         }
