@@ -6,6 +6,7 @@ public class Arraymayor {
         Proceso obj = new Proceso();
         obj.cargar();
         obj.mayorSueldo();
+        obj.menorElemento();
     }
 
 }
