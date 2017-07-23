@@ -8,6 +8,8 @@ public class Proceso {
     public String[] nombre;
     public float[] sueldo;
 
+    public float menor;
+
     public void cargar() {
         leer = new Scanner(System.in);
         System.out.print("cunatos datos desea agregar:");
@@ -38,12 +40,12 @@ public class Proceso {
     }
 
     public void menorElemento() {
-        float menor = sueldo[0];
+        menor = sueldo[0];
         int pos = 0;
-        for (int f = 1; f < sueldo.length; f++) {
-            if (sueldo[f] < menor) {
-                menor = sueldo[f];
-                pos = f;
+        for (int i = 1; i < sueldo.length; i++) {
+            if (sueldo[i] < menor) {
+                menor = sueldo[i];
+                pos = i;
             }
         }
         System.out.println("El elemento menor :" + menor);
@@ -52,14 +54,14 @@ public class Proceso {
 
     public void repiteMenor() {
         int cant = 0;
-        float menor = 0;
-        for (int f = 0; f < sueldo.length; f++) {
-            if (sueldo[f] == menor) {
-                cant++;
+        //float menor = 0;
+        for (int i = 0; i < sueldo.length; i++) {
+            if (sueldo[i] == menor) {
+                cant = cant + 1;
             }
         }
         if (cant > 1) {
-            System.out.println("Se repite el menor en el vector.");
+            System.out.println("Se repite el menor " + cant + " veces");
         } else {
             System.out.println("No se repite el menor en el vector.");
         }

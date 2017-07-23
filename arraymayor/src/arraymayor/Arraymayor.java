@@ -7,6 +7,7 @@ public class Arraymayor {
         obj.cargar();
         obj.mayorSueldo();
         obj.menorElemento();
+        obj.repiteMenor();
     }
 
 }
